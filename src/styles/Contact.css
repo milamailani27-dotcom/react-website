@@ -1,17 +1,69 @@
+
 #contact {
-  background: #dedede;
-  padding: 50px 0px 50px 0px;
+  background: #101b35;
+  padding: 65px 8% 50px;
+  color: #ffffff;
 }
 
 .footer {
   width: 100%;
-  position: relative;
-  display: flex;
-  flex-wrap: wrap;
+  max-width: 1200px;
+  display: grid;
+  grid-template-columns: 1.5fr 1fr 1.2fr 1fr;
+  gap: 35px;
   margin: auto;
 }
 
 .footer-section {
-  width: 20%;
-  margin: 0 auto;
+  width: 100%;
+}
+
+.footer-section h3 {
+  color: #ffffff;
+  font-size: 20px;
+  font-weight: 700;
+  margin-bottom: 20px;
+}
+
+.footer-section p {
+  color: #b8c3d9;
+  font-size: 14px;
+  line-height: 1.8;
+  margin-bottom: 10px;
+}
+
+.footer-section a {
+  color: #b8c3d9;
+  text-decoration: none;
+  transition: 0.3s ease;
+}
+
+.footer-section a:hover {
+  color: #5b9cff;
+  padding-left: 5px;
+}
+
+/* Responsive tablet */
+@media screen and (max-width: 900px) {
+  .footer {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 30px;
+  }
+}
+
+/* Responsive mobile */
+@media screen and (max-width: 600px) {
+  #contact {
+    padding: 45px 7% 35px;
+  }
+
+  .footer {
+    grid-template-columns: 1fr;
+    gap: 25px;
+  }
+
+  .footer-section h3 {
+    font-size: 18px;
+    margin-bottom: 12px;
+  }
 }

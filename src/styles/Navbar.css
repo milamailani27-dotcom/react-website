@@ -1,71 +1,104 @@
-.logo a {
-  font-size: 50px;
-  font-weight: 800;
-  float: left;
-  font-family: courier;
-  color: #364f6b;
-}
-
-.menu {
-  float: right;
-}
-
-nav {
-  width: 100%;
-  margin: auto;
-  display: flex;
-  line-height: 80px;
-  position: sticky;
-  position: -webkit-sticky;
-  top: 0;
+.navbar {
   background: #ffffff;
-  z-index: 1;
-  border-bottom: 1px solid #364f6b;
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+  box-shadow: 0 2px 15px rgba(0, 0, 0, 0.05);
 }
 
-nav ul {
-  list-style-type: none;
-  margin: 0;
-  padding: 0;
-  overflow: hidden;
+.nav-container {
+  max-width: 1200px;
+  margin: auto;
+  padding: 18px 25px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
 }
 
-nav ul li {
-  float: left;
-}
-
-nav ul li a {
-  color: black;
-  font-weight: bold;
-  text-align: center;
-  padding: 0px 16px 0px 16px;
+.logo {
+  font-size: 26px;
+  font-weight: 800;
+  color: #243b63;
   text-decoration: none;
 }
 
-nav ul li a:hover {
-  text-decoration: underline;
+.logo span {
+  color: #477bbd;
 }
 
-@media screen and (max-width: 991.98px) {
-  .logo a {
+.nav-menu {
+  display: flex;
+  align-items: center;
+  gap: 28px;
+  list-style: none;
+  margin: 0;
+}
+
+.nav-menu a {
+  color: #334155;
+  text-decoration: none;
+  font-size: 14px;
+  font-weight: 600;
+  transition: 0.3s;
+}
+
+.nav-menu a:hover {
+  color: #477bbd;
+}
+
+.nav-menu .nav-button {
+  background: #477bbd;
+  color: white;
+  padding: 12px 20px;
+  border-radius: 10px;
+}
+
+.nav-menu .nav-button:hover {
+  background: #243b63;
+  color: white;
+}
+
+.menu-toggle {
+  display: none;
+  border: none;
+  background: none;
+  font-size: 27px;
+  cursor: pointer;
+  color: #243b63;
+}
+
+@media (max-width: 768px) {
+  .nav-container {
+    padding: 15px 20px;
+  }
+
+  .menu-toggle {
     display: block;
+  }
+
+  .nav-menu {
+    display: none;
+    position: absolute;
+    top: 65px;
+    left: 0;
     width: 100%;
+    padding: 25px;
+    background: white;
+    flex-direction: column;
+    align-items: stretch;
+    gap: 22px;
+    box-shadow: 0 10px 15px rgba(0, 0, 0, 0.08);
+  }
+
+  .nav-menu.active {
+    display: flex;
+  }
+
+  .nav-menu a {
+    display: block;
+  }
+
+  .nav-menu .nav-button {
     text-align: center;
-  }
-
-  nav .menu {
-    width: 100%;
-    margin: 0;
-  }
-
-  nav .menu ul {
-    text-align: center;
-    margin: auto;
-    line-height: 60px;
-  }
-
-  nav .menu ul li {
-    display: inline-block;
-    float: none;
   }
 }

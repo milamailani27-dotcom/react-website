@@ -1,23 +1,35 @@
+
 export const contactSection = [
     {
-        content:`<h3>Mila Course.</h3>
-                    <p>Lorem ipsum dolor sit, 
-                    amet consectetur adipisicing elit. 
-                    Sint, culpa!</p>`,
+        content: `
+            <h3>MilaCourse.</h3>
+            <p>Belajar hari ini, raih masa depan yang lebih cerah.</p>
+            <p>Temukan pengalaman belajar online yang seru, fleksibel, dan berkualitas bersama MilaCourse.</p>
+        `,
     },
     {
-        content:`<h3>About</h3>
-                    <p>Lorem ipsum dolor sit, 
-                    amet consectetur adipisicing elit. 
-                    Sint, culpa!</p>`,
+        content: `
+            <h3>Explore</h3>
+            <p><a href="#home">Home</a></p>
+            <p><a href="#courses">Our Courses</a></p>
+            <p><a href="#tutors">Our Mentors</a></p>
+            <p><a href="#testimonials">Testimonials</a></p>
+        `,
     },
     {
-        content:`<h3>Contact</h3>
-                    <p>Jl. Laksda Adisucipto Sleman Yogyakarta</p>
-                    <p>Kode Pos: 57365</p>`,
+        content: `
+            <h3>Contact Us</h3>
+            <p>Email: hello@milacourse.com</p>
+            <p>Website: MilaCourse</p>
+            <p>Indonesia</p>
+        `,
     },
     {
-        content:`<h3>Social</h3>
-                    <p><b>YouTube: </b>Programming di RumahRafif</p>`,
+        content: `
+            <h3>Follow Us</h3>
+            <p><b>Instagram:</b> @milacourse</p>
+            <p><b>YouTube:</b> MilaCourse</p>
+            <p><b>TikTok:</b> @milacourse</p>
+        `,
     },
 ]
